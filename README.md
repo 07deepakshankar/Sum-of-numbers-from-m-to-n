@@ -1,10 +1,9 @@
 # Sum-of-numbers-from-m-to-n
-To calculate the sum of numbers from m to n
-# get input from the user
-ch = input("Enter any character:")
-if(ch>='A' and ch<='Z):
-    ch =ch.lower()
-    print("The entered character was in uppercase. In lowercase it is:"+ch)
-else:
-    ch = ch.upper()
-    print("The entered character was in lowercase. In uppercase it is:"+ch)
+# Get the initial(m) and final(n) values from the user
+m = int(input("Enter the value of m:"))
+n = int(input("Enter the value of n:"))
+s = 0
+while(m<=n):
+    s = s+m
+    m = m+1
+    print("Sum of numbers from",m,"to",n,"=",s)
